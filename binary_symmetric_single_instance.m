@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This code plots the expected utility of each player as  function of 
-% the prior a.                    
+% This code plots the expected utility of each player as function of 
+% the prior a for a given set of signals.                    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 p1=1;
