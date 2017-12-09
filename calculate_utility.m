@@ -1,3 +1,28 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Calculate the expected equilibrium utility conditional on a signal draw. 
+
+% Parameters
+% ----------
+% a : the prior probability of V=1
+% py : the array of probabilities of Pr[Y=y | V=1]
+% qy : the array of probabilities of Pr[Y=y | V=0]
+% pz : the array of probabilities of Pr[Z=z | V=1]
+% QX : the array of probabilities of Pr[Z=z | V=0]
+% ub : the common upper bound on the equilibrium bid support
+% y : the list of signals of y associated with each interval in the equilibrium
+%       interval structure, i.e. y(t) is the signal of Y associated with interval t
+% cdfy : value of CDF of Y at upper bound of interval t 
+% z : the list of signals of z associated with each interval in the equilibrium
+%       interval structure, i.e. z(t) is the signal of Z associated with interval t
+% cdfz : value of CDF of Y at upper bound of interval t
+% w : player index, either {1, 2}, for which to calculate conditional expected utility
+% s : signal index for which to calculate conditional expected utility 
+% 
+% Returns
+% -------
+% nval : the expected equilibrium utility of player w conditional on getting signal s
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function nval = calculate_utility(a,py,qy,pz,QX,ub,y,z,cdfy,cdfz,w,s)
 
 if w==1

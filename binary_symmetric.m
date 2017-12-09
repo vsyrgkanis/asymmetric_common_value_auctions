@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % This code plots the expected utility of each player as  function of 
-% the prior ?. In addition he plots it for several values of the strength 
+% the prior alpha. In addition it plots it for several values of the strength 
 % of the binary signal of the more informed bidder p2, while holding still 
 % the strength of the less informed bidder.                   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

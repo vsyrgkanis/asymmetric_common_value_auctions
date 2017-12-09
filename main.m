@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This code plots the utilities of the users in all four outcomes as a 
-% function of a. The seller is selling a signal of q and the bidders have
-% signals p1 and p2
+% This code plots the CDFs of the bidders for specific instances of the 
+% signals. Different examples are commented out. Uncomment the example
+% you want to run.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % % Binary

@@ -1,3 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Computes an equilibrium of an asymmetric first price common value
+% auction. 
+%
+% Parameters
+% ---------- 
+% a : the prior probability of V=1
+% PY : the array of probabilities of Pr[Y=y | V=1]
+% QY : the array of probabilities of Pr[Y=y | V=0]
+% PZ : the array of probabilities of Pr[Z=z | V=1]
+% QZ : the array of probabilities of Pr[Z=z | V=0]
+%
+% Returns
+% -------
+% ub : the common upper bound on the equilibrium bid support
+% y : the list of signals of y associated with each interval in the equilibrium
+%       interval structure, i.e. y(t) is the signal of Y associated with interval t
+% cdfy : value of CDF of Y at upper bound of interval t 
+% z : the list of signals of z associated with each interval in the equilibrium
+%       interval structure, i.e. z(t) is the signal of Z associated with interval t
+% cdfz : value of CDF of Y at upper bound of interval t
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function [ub,y,z,cdfy,cdfz]=equilibrium(a,PY,QY,PZ,QZ)
 
 % Total number of signal values of the two bidders

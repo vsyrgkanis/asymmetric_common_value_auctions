@@ -9,13 +9,13 @@ qy=fliplr(py);
 pz = [0 1];                              % Completely informed bidder
 qz=[1 0];
 
-% Plot CDFs for a specific value of ?
+% Plot CDFs for a specific value of alpha
 a=0.7;
 [ub, y, z, cdfy, cdfz]=equilibrium(a,py,qy,pz,qz);
 figure;
 plot_all_cdfs(a,py,qy,pz,qz,ub,y,z,cdfy,cdfz);
 
-% Plot Utility as a function of ?
+% Plot Utility as a function of alpha
 alphas=0.05:0.05:0.95;
 for t=1:length(alphas)
 	a=alphas(t); 
